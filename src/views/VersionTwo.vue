@@ -17,7 +17,7 @@
       <div :class="isActive ? 'position-absolute z--1' : ''"
         class="col-md-2 d-none d-md-flex justify-content-center align-items-center position-relative border-top border-bottom border-end text-secondary text-center"
         style="border-radius: 0 33px 33px 0; background: #d6d6d650">
-        <p style="transform: rotate(-90deg)" v-html="text.page_2.carousel_title"></p>
+        <p class="rotate-90" v-html="text.page_2.carousel_title"></p>
       </div>
       <div :class="isActive ? 'col-md-12' : 'col-md-10'"
         class="d-flex justify-content-center align-items-center text-center">

@@ -12,10 +12,10 @@
         <div class="row">
             <!-- carousel vertical title -->
             <div
-            class="col-md-2 d-none d-md-flex justify-content-center align-items-center position-relative border-top border-end border-bottom border-secondary text-light text-center"
+            class="col-md-2 d-none d-md-flex justify-content-center align-items-center border-top border-end border-bottom border-secondary text-light text-center"
             :class="isActive ? 'position-absolute z--1' : ''"
             style="border-radius: 0 33px 33px 0">
-                <p style="transform: rotate(-90deg)" v-html="text.page_1.carousel_title"></p>
+                <p class="rotate-90" v-html="text.page_1.carousel_title"></p>
             </div>
             <!-- carousel -->
             <div :class="isActive ? 'col-md-12' : 'col-md-10'"
