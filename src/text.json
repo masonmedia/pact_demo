@@ -4,7 +4,7 @@
     "banner": "assets/banner1.jpg",
     "carousel_drag": "Drag",
     "home_page": {
-        "page_title": "<span style='color: #D6D6D6'>Welcome!</span> I experimented with the assigned design and mocked up a few different approaches. Please navigate through the <span class='text-primary' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' role='button'>pages</span> and feel free to check out the code more thoroughly on my <a href='https://github.com/masonmedia' target='_blank' class='text-warning text-decoration-none'>github.</a>",
+        "page_title": "<span style='color: #D6D6D6'>Welcome!</span> I experimented with the assigned design and mocked up a few different approaches. Please navigate through the <span class='text-primary' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' role='button'>pages</span> and feel free to check out the code more thoroughly on my <a href='https://github.com/masonmedia/pact_demo' target='_blank' class='text-warning text-decoration-none'>github.</a>",
         "page_subtitle": "For fun I experimented with the assigned design and mocked up a few different approaches. Please navigate through the pages and feel free to check out the code more thorought on my github.",
         "cta": "Next"
     },
