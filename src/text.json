@@ -1,0 +1,68 @@
+{
+    "site_brand": "Mason",
+    "project_title": "pact design assignment",
+    "banner": "assets/banner1.jpg",
+    "carousel_drag": "Drag",
+    "home_page": {
+        "page_title": "<span style='color: #D6D6D6'>Welcome!</span> I experimented with the assigned design and mocked up a few different approaches. Please navigate through the <span class='text-primary' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' role='button'>pages</span> and feel free to check out the code more thoroughly on my <a href='https://github.com/masonmedia' target='_blank' class='text-warning text-decoration-none'>github.</a>",
+        "page_subtitle": "For fun I experimented with the assigned design and mocked up a few different approaches. Please navigate through the pages and feel free to check out the code more thorought on my github.",
+        "cta": "Next"
+    },
+    "page_1": {
+        "page_title": "Occasionally, we offer perspectives on the direct-to-consumer landscape, retail innovations, happenings around pact and the odd creative experiment.",
+        "carousel_title": "Latest Stories",
+        "carousel_slides": {},
+        "text_section": {
+            "title": "The intersection of design, business, and technology.",
+            "text": "Pact takes a unique, team-like, and holistic approach to building direct-to-consumer businesses: we do more across a variety of touchpoints for fewer clients so that we can be accountable and flexible to all the road bumps that inherently come with building something new.",
+            "cta": "START YOUR PROJECT WITH PACT"
+        }
+    },
+    "page_2": {
+        "page_title": "Occasionally, we offer perspectives on the direct-to-consumer landscape, retail innovations, happenings around pact and the odd creative experiment.",
+        "carousel_title": "Latest Stories",
+        "carousel_cta": "More",
+        "carousel_slides": [
+            {
+                "img": "assets/carousel/1.jpg",
+                "title": "Shoes",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/2.jpg",
+                "title": "Coats",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/3.jpg",
+                "title": "Accessories",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/4.jpg",
+                "title": "Things",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/5.jpg",
+                "title": "Outdoors",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/6.jpg",
+                "title": "Indoors",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            },
+            {
+                "img": "assets/carousel/7.jpg",
+                "title": "Formal",
+                "text": "Dolore sunt nisi veniam pariatur et commodo anim quis et."
+            }
+        ],
+        "text_section": {
+            "title": "The intersection of design, business, and technology.",
+            "text": "Pact takes a unique, team-like, and holistic approach to building direct-to-consumer businesses: we do more across a variety of touchpoints for fewer clients so that we can be accountable and flexible to all the road bumps that inherently come with building something new.",
+            "cta": "START YOUR PROJECT WITH PACT"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;900&display=swap');
+@import 'animations.scss';
+@import 'carousel.scss';
+
+body,
+html {
+  margin: 0;
+  background-color: #000000;
+  font-size: 19px;
+  font-size: calc(16px + 0.2vw);
+  font-family: 'Overpass', Helvetica, Arial, sans-serif;
+  line-height: 1.5rem;
+  color: #53565a;
+  transition: opacity 1s ease-in-out;
+  max-width: 1920px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+// set max-width on nav
+.navbar {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// link override
+
+a {
+  color: grey;
+}
+
+.router-link-exact-active {
+  color: #fff;
+}
+
+a:hover,
+.router-link-exact-active:hover {
+  color: lightgrey;
+}
