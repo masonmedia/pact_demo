@@ -81,7 +81,6 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import axios from 'axios'
 import text from '@/text.json'
 
   export default {
