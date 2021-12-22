@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class="animate__animated animate__slideOutRight bg-dark h-100 w-100 position-absolute start-0" style="z-index: 1000"></div>
+    <div class="animate__animated animate__slideOutRight bg-dark h-100 w-100 position-absolute start-0" style="z-index: 1000;"></div>
     <div class="container-fluid py-5 bg-dark">
         <div class="row p-5">
             <div class="col-lg-12 pt-5">

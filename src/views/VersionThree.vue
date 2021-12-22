@@ -1,5 +1,6 @@
 <template>
 <div>
+  <div class="animate__animated animate__slideOutRight bg-dark h-100 w-100 position-absolute start-0" style="z-index: 1000;"></div>
    <!-- banner -->
   <div class="container-fluid mt-5"
   :style="{'background' : 'url(' + require(`@/${text.banner}`) +')', 'background-size' : 'cover' }">
