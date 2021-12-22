@@ -121,9 +121,8 @@ export default {
             console.log("slider ended")
             this.isActive = false
         },
-    },
-    created() {
-        axios.get('https://jsonplaceholder.typicode.com/photos')
+        getData() {
+            axios.get('https://jsonplaceholder.typicode.com/photos')
             .then(response => {
                 this.data = response.data
                 console.log(this.data)
@@ -131,6 +130,10 @@ export default {
             .catch(e => {
                 this.errors.push(e)
             })
+        }
+    },
+    created() {
+        this.getData();
     }
 }
 </script>

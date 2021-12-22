@@ -82,7 +82,6 @@ import text from '@/text.json'
     data() {
       return {
         text: text,
-        data: [],
         errors: [],
         isActive: false,
         swiperOption: {
@@ -123,16 +122,6 @@ import text from '@/text.json'
         this.isActive = false
 
       }
-    },
-    created() {
-      axios.get('https://jsonplaceholder.typicode.com/photos')
-        .then(response => {
-          this.data = response.data
-          console.log(this.data)
-        })
-        .catch(e => {
-          this.errors.push(e)
-        })
     },
   }
 </script>
