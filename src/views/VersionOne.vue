@@ -11,8 +11,9 @@
         </div>
         <div class="row">
             <!-- carousel vertical title -->
-            <div :class="isActive ? 'position-absolute z--1' : ''"
+            <div
             class="col-md-2 d-none d-md-flex justify-content-center align-items-center position-relative border-top border-end border-bottom border-secondary text-light text-center"
+            :class="isActive ? 'position-absolute z--1' : ''"
             style="border-radius: 0 33px 33px 0">
                 <p style="transform: rotate(-90deg)" v-html="text.page_1.carousel_title"></p>
             </div>
