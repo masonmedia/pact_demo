@@ -96,8 +96,8 @@
           <img src="../assets/banner1.jpg" class="w-100 h-100" style="object-fit: cover; border-radius: 33px 0 0 33px" alt="">
         </div>
         <div class="col-lg-6 align-self-center p-5">
-          <h2 class="fs-5 fw-bold lh-1 text-uppercase">{{ text.page_2.text_section.text }}</h2>
-          <button class="btn btn-sm btn-outline-dark rounded-pill text-uppercase mt-3 px-4"
+          <h2 class="fs-4 fw-lighter lh-sm">{{ text.page_2.text_section.text }}</h2>
+          <button class="btn btn-sm btn-outline-dark rounded-pill mt-3 px-4"
           @click="$router.push('/')">{{ text.global_cta }}</button>
         </div>
       </div>
