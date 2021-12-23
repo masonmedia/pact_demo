@@ -16,10 +16,9 @@ For the carousel I used the Swiper library for a mix of speed and functionality.
 
 For the "Latest Stories" element, I chose to simply hide the title element on first drag/swipe of the carousel.  I played with adding another title element on the top of the carousel in addition to active slide styling, but for simplicity went with this method.
 
-**Images/Content**
+**Images**
 
-For a range of options, I used two different methods for carousel data:
-1. Images are sourced from Unsplash and are sourced from the local JSON data.
+Images are sourced from Unsplash.
 
 #### Animation
 
