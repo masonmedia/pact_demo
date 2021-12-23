@@ -15,7 +15,7 @@
             class="col-md-2 d-none d-md-flex justify-content-center align-items-center border-top border-end border-bottom border-secondary text-light text-center"
             :class="isActive ? 'position-absolute z--1' : ''"
             style="border-radius: 0 33px 33px 0">
-                <p v-html="text.page_1.carousel_title"></p>
+                <p class="rotate-90" v-html="text.page_1.carousel_title"></p>
             </div>
             <!-- carousel -->
             <div :class="isActive ? 'col-md-12' : 'col-md-10'"
@@ -29,11 +29,11 @@
                     {{ text.carousel_drag }}
                     </button>
                     <swiper-slide class="shadow" v-for="(slide, index) in text.page_2.carousel_slides" :key="index">
-                    <!-- <swiper-slide class="shadow" v-for="slide in data.slice(0, 20)" :key="slide.id"> -->
                         <!-- slide -->
                         <div class="card border-secondary bg-dark"
                             style="min-height: 450px; border-radius: 33px 33px 33px 0;">
                             <img :src="require(`@/${slide.img}`)" class="card-img-top" style="border-radius: 33px 33px 0 0;">
+                            <!-- <img :src="require('@/assets/carousel/1.jpg')" class="card-img-top" style="border-radius: 33px 33px 0 0;"> -->
                             <div class="card-body bg-dark text-light text-start py-4"
                             style="border-radius: 0 0 33px 0;">
                             <span class="badge bg-primary p-2 mb-3">{{ slide.category }}</span>
@@ -45,10 +45,6 @@
                                     <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
                                 </svg>
                             </a>
-                                <!-- <p class="text-uppercase" style="font-size: 16px">Category</p>
-                                <p class="small lh-sm fw-light pr-5" style="color: lightgrey">
-                                {{ slide.title.slice(0, 40) }}</p>
-                                <a href="#" class="btn btn-outline-light">More</a> -->
                             </div>
                         </div>
                     </swiper-slide>
@@ -68,7 +64,7 @@
                 </div>
                 <div class="col-lg-6 align-self-center px-4">
                     <p class="my-4">{{ text.page_1.text_section.text }}</p>
-                    <button @click="$router.push('/two'); pageChange()" class="btn btn-outline-dark text-uppercase m-0 px-4"
+                    <button @click="$router.push('/two')" class="btn btn-outline-dark text-uppercase m-0 px-4"
                     style="border-radius: 33px;">{{ text.page_1.text_section.cta }}</button>
                 </div>
             </div>
@@ -122,16 +118,21 @@ export default {
             }
         }
     },
+    computed: {
+      swiper() {
+        return this.$refs.mySwiper.$swiper
+      }
+    },
     methods: {
         slideStart() {
             console.log("slide started")
             this.isActive = true
 
         },
-        slideEnd() {
-            console.log("slider ended")
-            this.isActive = false
-        },
+        // slideEnd() {
+        //     console.log("slider ended")
+        //     this.isActive = false
+        // },
         // getData() {
         //     axios.get('https://jsonplaceholder.typicode.com/photos')
         //     .then(response => {
@@ -143,9 +144,6 @@ export default {
         //     })
         // }
     },
-    created() {
-        // this.getData();
-    }
 }
 </script>
 

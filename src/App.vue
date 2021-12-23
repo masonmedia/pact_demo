@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="animate__animated">
+  <div id="app" class="animate__animated animate__fadeIn">
     <nav-component></nav-component>
-    <!-- <transition name="slide-fade" mode="out-in"> -->
+    <!-- <transition name="fade" mode="out-in"> -->
       <router-view/>
     <!-- </transition> -->
   </div>
@@ -13,6 +13,9 @@ import NavComponent from '@/components/NavComponent.vue'
 export default {
   components: {
     NavComponent,
-  }
+  },
+  data() {
+    return {}
+  },
 }
 </script>
