@@ -15,7 +15,7 @@
     <div class="row">
       <!-- carousel vertical title -->
       <div :class="isActive ? 'position-absolute z--1' : ''"
-        class="col-md-2 d-none d-md-flex justify-content-center align-items-center position-relative border-top border-bottom border-end text-secondary text-center"
+        class="col-md-2 d-none d-md-flex justify-content-center align-items-center position-relative border-top border-bottom border-end text-secondary text-center shadow"
         style="border-radius: 0 33px 33px 0; background: #d6d6d650">
         <p class="rotate-90" v-html="text.page_2.carousel_title"></p>
       </div>
@@ -38,7 +38,12 @@
                 <span class="badge bg-primary">{{ slide.category }}</span>
                 <p class="lh-sm fw-bold pr-5 pb-2 border-bottom" style="color: #00000080">{{ slide.title }}</p>
                 <p class="small lh-sm fw-light pr-5" style="color: #00000050">{{ slide.text }}</p>
-                <a href="#" class="text-decoration-none text-primary">{{ text.page_2.carousel_cta }}</a>
+                <a href="#" class="text-decoration-none text-dark">{{ text.page_2.carousel_cta }} 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right text-dark" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+              </a>
               </div>
             </div>
           </swiper-slide>

@@ -4,7 +4,7 @@
     <div class="container-fluid py-5 bg-dark">
         <div class="row p-5">
             <div class="col-lg-12 pt-5">
-                <h1 class="fw-bold text-uppercase lh-1 bounce-in-top" style="font-size: 9vmin; color: #FFFAF340;"
+                <h1 class="knockout fw-bold text-uppercase lh-1 bounce-in-top" style="font-size: 9vmin; color: #FFFAF340;"
                     v-html="text.page_1.page_title">
                 </h1>
             </div>
@@ -15,7 +15,7 @@
             class="col-md-2 d-none d-md-flex justify-content-center align-items-center border-top border-end border-bottom border-secondary text-light text-center"
             :class="isActive ? 'position-absolute z--1' : ''"
             style="border-radius: 0 33px 33px 0">
-                <p class="rotate-90" v-html="text.page_1.carousel_title"></p>
+                <p v-html="text.page_1.carousel_title"></p>
             </div>
             <!-- carousel -->
             <div :class="isActive ? 'col-md-12' : 'col-md-10'"
@@ -28,17 +28,27 @@
                     style="width: 50px; height: 50px; top: 20%; border-radius: 100%; z-index: 10; font-size: 11px">
                     {{ text.carousel_drag }}
                     </button>
-                    <swiper-slide class="shadow" v-for="slide in data.slice(0, 20)" :key="slide.id">
+                    <swiper-slide class="shadow" v-for="(slide, index) in text.page_2.carousel_slides" :key="index">
+                    <!-- <swiper-slide class="shadow" v-for="slide in data.slice(0, 20)" :key="slide.id"> -->
                         <!-- slide -->
                         <div class="card border-secondary bg-dark"
                             style="min-height: 450px; border-radius: 33px 33px 33px 0;">
-                            <img :src="slide.url" class="card-img-top" style="border-radius: 33px 33px 0 0;">
+                            <img :src="require(`@/${slide.img}`)" class="card-img-top" style="border-radius: 33px 33px 0 0;">
                             <div class="card-body bg-dark text-light text-start py-4"
                             style="border-radius: 0 0 33px 0;">
-                                <p class="text-uppercase" style="font-size: 16px">Category</p>
+                            <span class="badge bg-primary p-2 mb-3">{{ slide.category }}</span>
+                            <p class="lh-sm fw-bold text-light pr-5 pb-2 border-bottom">{{ slide.title }}</p>
+                            <p class="small lh-sm fw-light text-light pr-5">{{ slide.text }}</p>
+                            <a href="#" class="text-decoration-none text-light">{{ text.page_2.carousel_cta }} 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right text-light" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                                <!-- <p class="text-uppercase" style="font-size: 16px">Category</p>
                                 <p class="small lh-sm fw-light pr-5" style="color: lightgrey">
                                 {{ slide.title.slice(0, 40) }}</p>
-                                <a href="#" class="btn btn-outline-light">More</a>
+                                <a href="#" class="btn btn-outline-light">More</a> -->
                             </div>
                         </div>
                     </swiper-slide>
@@ -70,7 +80,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-import axios from 'axios'
+// import axios from 'axios'
 import text from '@/text.json'
 
 export default {
@@ -88,7 +98,7 @@ export default {
             swiperOption: {
                 slidesPerView: 2,
                 spaceBetween: 10,
-                centeredSlides: true,
+                centeredSlides: false,
                 grabCursor: true,
                 pagination: {
                     el: '.swiper-pagination',
@@ -122,25 +132,25 @@ export default {
             console.log("slider ended")
             this.isActive = false
         },
-        getData() {
-            axios.get('https://jsonplaceholder.typicode.com/photos')
-            .then(response => {
-                this.data = response.data
-                console.log(this.data)
-            })
-            .catch(e => {
-                this.errors.push(e)
-            })
-        }
+        // getData() {
+        //     axios.get('https://jsonplaceholder.typicode.com/photos')
+        //     .then(response => {
+        //         this.data = response.data
+        //         console.log(this.data)
+        //     })
+        //     .catch(e => {
+        //         this.errors.push(e)
+        //     })
+        // }
     },
     created() {
-        this.getData();
+        // this.getData();
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    .swiper-slide>img {
+    .swiper-slide > img {
         width: 100%;
     }
 

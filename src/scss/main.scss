@@ -40,3 +40,14 @@ a:hover,
 .router-link-exact-active:hover {
   color: lightgrey;
 }
+
+.knockout {
+  color: #FFFAF340;
+  background-image: url("../assets/carousel/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
