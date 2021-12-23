@@ -21,8 +21,7 @@
             <div :class="isActive ? 'col-md-12' : 'col-md-10'"
             class="d-flex justify-content-center align-items-center text-center">
                 <swiper class="swiper"
-                :options="swiperOption" @slideChangeTransitionStart="slideStart"
-                @reachEnd="slideEnd">
+                :options="swiperOption" @slideChangeTransitionStart="slideStart">
                     <button :class="isActive ? 'puff-out-center' : ''"
                     class="btn btn-sm btn-light position-absolute start-50 translate-middle shadow text-uppercase"
                     style="width: 50px; height: 50px; top: 20%; border-radius: 100%; z-index: 10; font-size: 11px">

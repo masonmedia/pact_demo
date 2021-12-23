@@ -13,6 +13,10 @@
           style="filter: drop-shadow(3px 3px 5px #000); font-size: 5vmin;">
             {{ text.page_2.page_title }}
           </h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-chevron-double-down text-white mt-3 animate__animated animate__fadeInUp animate__delay-1s" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -68,18 +72,7 @@
 
     <!-- text div -->
     <div class="container shadow-lg mb-3" style="background: rgba(0,0,0,0.2); border-radius: 33px;">
-      <!-- <div class="row d-flex justify-content-center align-items-center py-3">
-        <div class="col-lg-6 align-self-center px-4">
-          <h2 class="fw-bold lh-1 text-uppercase" style="font-size: 6vmin">{{ text.page_2.text_section.title }}</h2>
-        </div>
-        <div class="col-lg-6 align-self-center px-4">
-          <p class="my-4">{{ text.page_2.text_section.text }}</p>
-          <button class="btn btn-outline-dark text-uppercase m-0 px-4"
-          @click="$router.push('/')"
-          style="border-radius: 33px;">{{ text.page_2.text_section.cta }}</button>
-        </div>
-      </div> -->
-      
+      <!-- row 1 -->
       <div class="row d-flex justify-content-center align-items-center" style="min-height: 75vh">
         <div class="col-lg-6 align-self-center p-5">
           <h2 class="fw-bold lh-1 text-uppercase" style="font-size: 6vmin">{{ text.page_2.text_section.title }}</h2>
@@ -89,7 +82,7 @@
         </div>
       </div>
     </div>
-    
+    <!-- row 2 -->
     <div class="container shadow-lg" style="background: #ACCEC8; border-radius: 33px">
       <div class="row d-flex justify-content-center align-items-center" style="min-height: 75vh">
         <div class="col-lg-6 align-self-stretch p-0" style="min-height: 50vh;">
@@ -102,9 +95,6 @@
         </div>
       </div>
     </div>
-
-
-
   </div><!-- end main container -->
 </div>
 </template>
