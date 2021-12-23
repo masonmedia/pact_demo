@@ -6,12 +6,11 @@ This is the repo for a design assignment for PACT by Andrew Mason.
 
 #### Framework and build tools
 
-The project is built with Vue.js, scss, and Bootstrap 5 for UI framework. For styling and layout I use Bootstrap's Atomic, utility class approach.
+The project is built with Vue.js, scss, animate.css, and Bootstrap 5 for UI framework. For styling and layout I use Bootstrap's Atomic, utility class approach.
 
 #### Carousel
 
--    I used Swiper for the carousel for a mix of speed and functionality.
--    A note on responsiveness: I found resizing the browser would have an odd resizing effect on the carousel, reducing slides and shifting it to the right slightly, but refreshing the page at different breakpoints achieves normal/desired layout behaviour. 
+For the carousel I used the Swiper library for a mix of speed and functionality.
 
 **Animation** 
 
@@ -20,8 +19,7 @@ For the "Latest Stories" element, I chose to simply hide the title element on fi
 **Images/Content**
 
 For a range of options, I used two different methods for carousel data:
-1. Version One uses the json placeholder API as a data source to mockup dummy content. I used axios and a get request to pull in the data.
-2. Version Two uses JSON and local images as the data source, which are imported into the page.
+1. Images are sourced from Unsplash and are sourced from the local JSON data.
 
 #### Animation
 
