@@ -63,9 +63,8 @@
         </div>
         <div class="col-lg-6 align-self-center px-4">
           <p class="my-4">{{ text.page_2.text_section.text }}</p>
-          <button class="btn btn-outline-light text-uppercase m-0 px-4"
-          @click="$router.push('/three')"
-          style="border-radius: 33px;">{{ text.page_2.text_section.cta }}</button>
+          <button class="btn btn-sm btn-outline-light rounded-pill text-uppercase m-0 px-4"
+          @click="$router.push('/three')">{{ text.page_2.text_section.cta }}</button>
         </div>
       </div>
     </div>
