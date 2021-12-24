@@ -8,7 +8,7 @@ This is the repo for a design assignment for PACT by Andrew Mason.
 
 #### Framework and build tools
 
-The project is built with Vue.js, scss, animate.css, and Bootstrap 5 for UI framework. For styling and layout I use Bootstrap's Atomic, utility class approach.
+The project is built with Vue.js, Vue CLI, SCSS, animate.css, and Bootstrap 5 for UI framework. For styling and layout I use Bootstrap's Atomic, utility class approach.
 
 #### Carousel
 
