@@ -100,7 +100,7 @@
           <div class="col-lg-6 align-self-center p-5">
             <h2 class="fs-4 fw-lighter lh-sm">{{ text.page_2.text_section.text }}</h2>
             <button class="btn btn-sm btn-outline-dark rounded-pill mt-3 px-4"
-              @click="$router.push('/')">{{ text.global_cta }}</button>
+              @click="$router.push({ path: '/' })">{{ text.global_cta }}</button>
           </div>
         </div>
       </div>

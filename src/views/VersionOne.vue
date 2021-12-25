@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-lg-6 align-self-center px-4">
                         <p class="my-4">{{ text.page_1.text_section.text }}</p>
-                        <button @click="$router.push({ path: 'two' }); animateOut()"
+                        <button @click="$router.push({ path: 'two' })"
                         class="btn btn-sm btn-outline-dark rounded-pill text-uppercase m-0 px-4">{{ text.page_1.text_section.cta }}</button>
                     </div>
                 </div>
