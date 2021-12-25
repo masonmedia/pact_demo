@@ -1,6 +1,10 @@
 <template>
-  <div class="container-fluid py-5 bg-light">
-    <div class="animate__animated animate__slideOutRight bg-dark h-100 w-100 position-absolute start-0" style="z-index: 1000"></div>
+  <div class="container-fluid position-relative">
+    <!-- swipe layer -->
+    <div class="animate__animated animate__slideOutRight h-100 w-100 position-absolute start-0"
+    style="background: #ACCEC8; z-index: 1000;"></div>
+    <!-- banner -->
+    <div class="container-fluid py-5 bg-light position-relative">
     <div class="row px-5 pt-5 pb-3 pb-md-5">
       <div class="col-lg-12 pt-5">
         <h1 class="animate__animated animate__flipInX fw-bold text-uppercase lh-1 text-light"
@@ -68,7 +72,7 @@
         </div>
       </div>
     </div>
-
+    </div>
   </div><!-- end main container -->
 </template>
 
@@ -84,6 +88,7 @@ import text from '@/text.json'
     },
     data() {
       return {
+        show: false,
         text: text,
         errors: [],
         isActive: false,
