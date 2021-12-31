@@ -8,7 +8,7 @@
             <div class="row p-5">
                 <div class="col-lg-12 py-5 px-4 px-md-0">
                     <h1 class="fw-bold text-uppercase lh-1 animate__animated animate__fadeIn"
-                    style="font-size: 8vmin; color: #FFFAF340;">
+                    style="color: #FFFAF340;">
                     <span class="px-0 px-md-5" style="text-indent: 50px;"></span>{{ text.page_1.page_title }}
                     </h1>
                 </div>
@@ -144,7 +144,7 @@
 
 <style lang="scss" scoped>
     h1 {
-        font-size: 76px;
+        font-size: 57px;
     }
     .swiper-slide>img {
         width: 100%;
