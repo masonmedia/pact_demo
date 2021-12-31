@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid position-relative">
+  <div class="container-fluid position-relative px-0">
     <!-- swipe layer -->
     <div class="animate__animated animate__slideOutRight h-100 w-100 position-absolute start-0"
     style="background: #000; z-index: 1000"></div>
@@ -47,9 +47,9 @@
           :options="swiperOption" 
           @slideChangeTransitionStart="slideStart">
             <button :class="isActive ? 'puff-out-center' : ''"
-              class="btn btn-sm btn-light position-absolute start-50 translate-middle shadow text-uppercase"
-              style="width: 50px; height: 50px; top: 20%; border-radius: 100%; z-index: 10; font-size: 11px">
-              {{ text.carousel_drag }}
+            class="btn btn-sm btn-light d-flex justify-content-center align-items-center position-absolute start-50 translate-middle shadow text-uppercase"
+            style="width: 50px; height: 50px; top: 25%; border-radius: 100%; z-index: 10; font-size: 10px">
+                {{ text.carousel_drag }}
             </button>
             <swiper-slide style="filter: drop-shadow(3px 3px 5px lightgrey)"
               v-for="slide in text.page_2.carousel_slides" :key="slide.id">

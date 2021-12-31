@@ -1,11 +1,11 @@
 <template>
-    <div id="one" class="container-fluid position-relative">
+    <div id="one" class="container-fluid position-relative px-0">
         <!-- swiper layer -->
         <div class="animate__animated animate__slideOutRight h-100 w-100 position-absolute start-0"
         style="background: #000; z-index: 1000;"></div>
         <!-- banner -->
-        <div class="container-fluid py-5 bg-dark">
-            <div class="row p-4 p-md-5">
+        <div class="container-fluid py-5" style="background: #2C2C2C;">
+            <div class="row p-5">
                 <div class="col-lg-12 pt-5 px-0">
                     <h1 class="fw-bold text-uppercase lh-1 animate__animated animate__fadeIn"
                     style="font-size: 9vmin; color: #FFFAF340;">
@@ -21,23 +21,23 @@
                 </div>
                 <!-- carousel -->
                 <div :class="isActive ? 'col-md-12' : 'col-md-10'"
-                class="d-flex justify-content-center align-items-center text-center">
+                class="d-flex justify-content-center align-items-center text-center px-0">
                     <swiper class="swiper" 
                     ref="mySwiper"
                     :options="swiperOption" 
                     @slideChangeTransitionStart="slideStart">
                         <button :class="isActive ? 'puff-out-center' : ''"
-                        class="btn btn-sm btn-light position-absolute start-50 translate-middle shadow text-uppercase"
-                        style="width: 50px; height: 50px; top: 30%; border-radius: 100%; z-index: 10; font-size: 10px">
+                        class="btn btn-sm btn-light d-flex justify-content-center align-items-center position-absolute start-50 translate-middle shadow text-uppercase"
+                        style="width: 50px; height: 50px; top: 25%; border-radius: 100%; z-index: 10; font-size: 10px">
                             {{ text.carousel_drag }}
                         </button>
-                        <swiper-slide class="shadow" v-for="(slide, index) in text.page_2.carousel_slides" :key="index">
+                        <swiper-slide v-for="(slide, index) in text.page_2.carousel_slides" :key="index">
                             <!-- slide -->
-                            <div class="card bg-dark">
+                            <div class="card" style="background: #2C2C2C;">
                                 <img :src="require(`@/${slide.img}`)" class="card-img-top"
                                 style="border-radius: 33px 33px 33px 0;">
-                                <div class="card-body bg-dark text-light text-start py-4"
-                                style="border-radius: 0 0 33px 0;">
+                                <div class="card-body text-light text-start py-4"
+                                style="border-radius: 0 0 33px 0; background: #2C2C2C;">
                                     <p class="lh-sm text-light pr-5 text-uppercase" style="font-size: 12px">Category</p>
                                     <p class="small lh-sm fw-light text-light pr-5">{{ slide.text }}</p>
                                 </div>

@@ -1,5 +1,7 @@
 <template>
-    <nav class="navbar navbar-dark bg-dark fixed-top p-3">
+    <nav class="navbar navbar-dark fixed-top p-3"
+    :class="versionOne ? '' : 'bg-dark'"
+    :style="versionOne ? 'background: #2C2C2C;' : 'bg-dark'">
         <div class="container-fluid">
             <router-link class="navbar-brand text-lowercase" :to="$router.options.routes[0]">{{ text.site_brand }}</router-link>
             <button class="navbar-toggler border-0 px-0 px-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -46,10 +48,15 @@ export default {
             isActive: false,
         }
     },
+    computed: {
+        versionOne() {
+            return this.$route.name == 'One' ? true : false
+        }
+    },
     methods: {
         navToggle() {
             this.isActive = !this.isActive;
-        }
+        },
     },
 }
 </script>
