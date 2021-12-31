@@ -38,6 +38,23 @@
     </nav>
 </template>
 
+<style scoped>
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* button outline remove */
+
+input[type=button], 
+input[type=button]:focus {
+  outline: none;
+}
+
+</style>
 <script>
 import text from '@/text.json'
 export default {

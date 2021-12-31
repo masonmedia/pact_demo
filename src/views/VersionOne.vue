@@ -16,12 +16,12 @@
             <div class="row">
                 <!-- carousel vertical title -->
                 <div class="rotate-90 col-md-2 d-none d-md-flex justify-content-center align-items-center text-center"
-                :class="isActive ? 'position-absolute z--1' : ''" style="color: #FFFAF3; border-radius: 0 33px 33px 0">
+                :class="isActive ? 'position-absolute z--1' : ''" style="color: #FFFAF3;">
                     <p style="font-size: 16px"  v-html="text.page_1.carousel_title"></p>
                 </div>
                 <!-- carousel -->
                 <div :class="isActive ? 'col-md-12' : 'col-md-10'"
-                class="d-flex justify-content-center align-items-center text-center px-0">
+                class="d-flex justify-content-center align-items-center text-center">
                     <swiper class="swiper" 
                     ref="mySwiper"
                     :options="swiperOption" 
@@ -38,8 +38,8 @@
                                 style="border-radius: 33px 33px 33px 0;">
                                 <div class="card-body text-light text-start py-4"
                                 style="border-radius: 0 0 33px 0; background: #2C2C2C;">
-                                    <p class="lh-sm text-light pr-5 text-uppercase" style="font-size: 12px">Category</p>
-                                    <p class="small lh-sm fw-light text-light pr-5">{{ slide.text }}</p>
+                                    <p class="lh-sm text-light text-uppercase" style="font-size: 12px">Category</p>
+                                    <p class="small lh-sm fw-light text-light pe-2">{{ slide.text }}</p>
                                 </div>
                             </div>
                         </swiper-slide>
