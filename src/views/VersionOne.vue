@@ -143,11 +143,20 @@
 </script>
 
 <style lang="scss" scoped>
+    h1 {
+        font-size: 76px;
+    }
     .swiper-slide>img {
         width: 100%;
     }
 
     .z--1 {
         z-index: -1;
+    }
+
+    @media(max-width: 768px) {
+        h1 {
+            font-size: 8vmin;
+        }
     }
 </style>
