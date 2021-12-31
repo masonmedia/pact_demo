@@ -5,18 +5,19 @@
         style="background: #000; z-index: 1000;"></div>
         <!-- banner -->
         <div class="container-fluid py-5 bg-dark">
-            <div class="row p-5">
-                <div class="col-lg-12 pt-5">
-                    <h1 class="knockout fw-bold text-uppercase lh-1 bounce-in-top"
-                        style="font-size: 9vmin; color: #FFFAF340;" v-html="text.page_1.page_title">
+            <div class="row p-4 p-md-5">
+                <div class="col-lg-12 pt-5 px-0">
+                    <h1 class="fw-bold text-uppercase lh-1 animate__animated animate__fadeIn"
+                    style="font-size: 9vmin; color: #FFFAF340;">
+                    <span class="px-0 px-md-5" style="text-indent: 50px;"></span>{{ text.page_1.page_title }}
                     </h1>
                 </div>
             </div>
             <div class="row">
                 <!-- carousel vertical title -->
-                <div class="col-md-2 d-none d-md-flex justify-content-center align-items-center border-top border-end border-bottom border-secondary text-light text-center"
-                :class="isActive ? 'position-absolute z--1' : ''" style="border-radius: 0 33px 33px 0">
-                    <p class="rotate-90" v-html="text.page_1.carousel_title"></p>
+                <div class="rotate-90 col-md-2 d-none d-md-flex justify-content-center align-items-center text-center"
+                :class="isActive ? 'position-absolute z--1' : ''" style="color: #FFFAF3; border-radius: 0 33px 33px 0">
+                    <p style="font-size: 16px"  v-html="text.page_1.carousel_title"></p>
                 </div>
                 <!-- carousel -->
                 <div :class="isActive ? 'col-md-12' : 'col-md-10'"
@@ -27,28 +28,18 @@
                     @slideChangeTransitionStart="slideStart">
                         <button :class="isActive ? 'puff-out-center' : ''"
                         class="btn btn-sm btn-light position-absolute start-50 translate-middle shadow text-uppercase"
-                        style="width: 50px; height: 50px; top: 20%; border-radius: 100%; z-index: 10; font-size: 11px">
+                        style="width: 50px; height: 50px; top: 30%; border-radius: 100%; z-index: 10; font-size: 10px">
                             {{ text.carousel_drag }}
                         </button>
                         <swiper-slide class="shadow" v-for="(slide, index) in text.page_2.carousel_slides" :key="index">
                             <!-- slide -->
-                            <div class="card border-secondary bg-dark"
-                            style="min-height: 450px; border-radius: 33px 33px 33px 0;">
+                            <div class="card bg-dark">
                                 <img :src="require(`@/${slide.img}`)" class="card-img-top"
-                                style="border-radius: 33px 33px 0 0;">
+                                style="border-radius: 33px 33px 33px 0;">
                                 <div class="card-body bg-dark text-light text-start py-4"
                                 style="border-radius: 0 0 33px 0;">
-                                    <span class="badge bg-primary p-2 mb-3">{{ slide.category }}</span>
-                                    <p class="lh-sm fw-bold text-light pr-5 pb-2 border-bottom">{{ slide.title }}</p>
+                                    <p class="lh-sm text-light pr-5 text-uppercase" style="font-size: 12px">Category</p>
                                     <p class="small lh-sm fw-light text-light pr-5">{{ slide.text }}</p>
-                                    <a href="#" class="text-decoration-none text-light">{{ text.page_2.carousel_cta }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-chevron-double-right text-light"
-                                        viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
-                                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
                         </swiper-slide>
