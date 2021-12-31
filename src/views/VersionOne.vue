@@ -6,9 +6,9 @@
         <!-- banner -->
         <div class="container-fluid py-5" style="background: #2C2C2C;">
             <div class="row p-5">
-                <div class="col-lg-12 pt-5 px-0">
+                <div class="col-lg-12 py-5 px-0">
                     <h1 class="fw-bold text-uppercase lh-1 animate__animated animate__fadeIn"
-                    style="font-size: 9vmin; color: #FFFAF340;">
+                    style="font-size: 8vmin; color: #FFFAF340;">
                     <span class="px-0 px-md-5" style="text-indent: 50px;"></span>{{ text.page_1.page_title }}
                     </h1>
                 </div>
