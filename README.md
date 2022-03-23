@@ -2,7 +2,7 @@
 
 # Mason pact Design Project
 
-This is the repo for a design assignment for PACT by Andrew Mason.
+A repo housing a design/build project for PACT.  Aside from notes below, this project uses Bootstrap 5 directly without the BootstrapVue library. The removal of jQuery and transition to plain js remove the need for the BootstrapVue wrapper.  This allows use of all the newest utility classes and components in the latest version of Bootstrap.  
 
 ### Notes:
 
